@@ -1,10 +1,10 @@
 # Freedivah
 **Freedivah** is a global community platform where freedivers from around the world come together to connect, share their passion, and inspire each other. The name **Freedivah** blends 'freediving' with the name of the developer, a devoted freediving enthusiast, capturing her deep love for the sport in every detail.
-### MVP FEATURES
-#### 1. TRACK & ANALYZE
+## MVP FEATURES
+### TRACK & ANALYZE
 
 - **My Dive Map**: Mark your dive locations on a global map with flag badges. Input methods include GPS, device integration, and direct entry.
-#### 2. SHARE & CONNECT
+### SHARE & CONNECT
 
 - **Profile**: Earn and showcase freediving certification badges.
 - **Export & Share**: Export and share your dive map files.
@@ -13,7 +13,7 @@
     - Share your current location with a map image featuring a flag badge.
     - Posts are automatically translated into English.
 
-### TECH STACKS
+## TECH STACKS
 
 #### **Mono Repo / PNPM**
 
