@@ -39,7 +39,7 @@
 - **Google Authentication**: Enabled through Firebase Authentication, offering a smooth and effortless login experience with Google accounts.
 
 
-### External APIs
+## External APIs
 
 #### Map Integration & Visualization
 
