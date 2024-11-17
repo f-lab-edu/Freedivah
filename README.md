@@ -1,59 +1,26 @@
-# Freedivah
-**Freedivah** is a global community platform where freedivers from around the world come together to connect, share their passion, and inspire each other. The name **Freedivah** blends 'freediving' with the name of the developer, a devoted freediving enthusiast, capturing her deep love for the sport in every detail.
-## MVP FEATURES
-### TRACK & ANALYZE
+# Project Overview  
+**“From Dive Tracking to Social Sharing”**  
+Freedivah is an interactive platform for freedivers to mark and share their dive locations on a world map using national flag icons. It combines freediving with technology, allowing users to track their dives, create a personalized map, and connect with other divers.
 
-- **My Dive Map**: Mark your dive locations on a global map with flag badges. Input methods include GPS, device integration, and direct entry.
-### SHARE & CONNECT
+The name 'Freedivah' blends 'freediving' with my identity as a developer, reflecting my journey and enthusiasm for underwater exploration.
 
-- **Profile**: Earn and showcase freediving certification badges.
-- **Export & Share**: Export and share your dive map files.
-- **Feed**:
-    - Upload and comment on photos and videos.
-    - Share your current location with a map image featuring a flag badge.
-    - Posts are automatically translated into English.
+## Key Features
 
-## TECH STACKS
+- **Personalized Dive Map**: Users can mark their dive locations on a world map.
+- **Sharing and Connecting**: Users can share their experiences and connect with other divers.
+- **Tracking and Documentation**: Keep a record of dives across different countries.
 
-#### Mono Repo / PNPM
+## Development Considerations
 
-- **Mono Repo**: Manages multiple packages within a single repository, streamlining development and version control.
-- **PNPM**: Provides efficient package management with fast installation and reduced disk space usage. Chosen for its superior compatibility with widely used tools, despite Yarn Berry’s Zero-install advantages.
+### 1. **Creating a "Screaming Architecture" from a Domain Perspective**
+   - Using FSD (Feature-Sliced Design) to build a feature-driven architecture aligned with the domain, ensuring single-direction dependencies for enhanced flexibility and scalability.
 
-#### Front-End Technologies
+### 2. **Designing Decoupled Systems**
+   - **Ensuring** a clean separation of concerns between business logic, UI, and side effects to maintain flexibility and scalability.
+   - **Using** SOLID principles to design modular, maintainable components and multi-paradigm design to provide a flexible system structure.
 
-- **Vanilla JavaScript** and **TypeScript**: Core languages selected to deepen our understanding of fundamental JavaScript principles.
-- **Vanilla Extract**: Used for styling and UI development. Preferred over TailwindCSS and Styled Components for its static CSS extraction, type safety, and lack of runtime overhead, enhancing performance and maintainability.
+## Design
+<img src="docs/images/Freedivah_Design.webp" alt="description" style="width: auto; height: 500px" />
+---
 
-#### Backend Framework
-
-- **Node.js** with **Express.js**: Manages server-side logic and API endpoints.
-
-#### Data Storage
-
-- **Firebase Realtime Database**: Handles and stores dive data and user profiles.
-
-#### Authentication
-
-- **Firebase Authentication**: Manages user authentication and profiles, seamlessly integrating with Google Authentication.
-- **Google Authentication**: Enabled through Firebase Authentication, offering a smooth and effortless login experience with Google accounts.
-
-
-## EXTERNAL APIS
-
-#### Map Integration & Visualization
-
-- **Google Maps JavaScript API**: Displays dive locations with flag badges on a map.
-
-#### Location Services
-
-- **Geolocation API**: Retrieves the user's current location for precise dive tracking.
-- **OpenCage Geocoding API**: Converts coordinates into country information. Selected for its cost-effectiveness and broad coverage compared to Google Maps Geocoding API.
-
-#### Data Export
-
-- **JSZip**: Exports dive maps and data as downloadable files.
-
-#### Flag Icons
-
-- **FlagsAPI**: Provides high-quality flag icons in SVG format with various sizes and styles.
+For detailed documentation, including Persona, Ideation MindMap, Technical Design, API Design, Route Design, Functional Specification, ER Diagram, Tech Stack, Architecture Diagram, and Folder Structure, refer to [this document](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74).
