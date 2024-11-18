@@ -19,8 +19,70 @@ The name 'Freedivah' blends 'freediving' with my identity as a developer, reflec
    - **Ensuring** a clean separation of concerns between business logic, UI, and side effects to maintain flexibility and scalability.
    - **Using** SOLID principles to design modular, maintainable components and multi-paradigm design to provide a flexible system structure.
 
-## Design
-<img src="docs/images/Freedivah_Design.webp" alt="description" style="width: auto; height: 500px" />
----
+## Technologies Used
+   - **Frontend**: Next.js, TypeScript, Vanilla Extract
+   - **Backend**: Node.js / Express.js, Supabase
+   - **Testing**: Jest
+   - **DevOps**: Github Actions, Docker, AWS
+For a detailed explanation of why these technologies were selected, refer to [this document](https://www.notion.so/jiah827/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=4#10f4ef50e63380f9854cd83ea84b5bf0).
 
-For detailed documentation, including Persona, Ideation MindMap, Technical Design, API Design, Route Design, Functional Specification, ER Diagram, Tech Stack, Architecture Diagram, and Folder Structure, refer to [this document](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74).
+## How to Run
+### Prerequisites
+- Node.js 18+ 
+- Yarn 4.5.1+
+
+### Installation
+1. Clone the repository
+   ```
+   git clone https://github.com/f-lab-edu/Freedivah.git
+   cd Freedivah
+   ```
+2. Install dependencies
+   ```
+   yarn install
+   ```
+### Development
+   ```
+   yarn dev:web   // Run web application only
+   yarn dev:all   // Run all services (web, api, shared)
+   ```
+### Testing
+   ```
+   yarn test      // Run all tests
+   yarn test:coverage  // Run tests with coverage
+   ```
+### Building
+   ```
+   yarn build:all  // Build all packages
+   ```
+     
+## Project Structure
+```
+packages/web/
+├── app/               # Next.js App Router (Server Components)
+│ └──  (routes)/       # URL-based routing
+│
+├── src/               # FSD(Feature-Sliced Design) structure
+│ ├── application/     # App-wide settings
+│ ├── features/        # Domain-specific feature modules
+│ ├── entities/        # Domain models and basic CRUD
+│ └── shared/          # Reusable modules
+```
+This structure combines Next.js App Router with Feature-Sliced Design (FSD) architecture to ensure:
+- Clear separation between routing (app/) and business logic (src/)
+- Domain-driven organization of features and entities
+- Reusable components and utilities in shared modules
+- Scalable and maintainable codebase structure
+
+For a detailed story of optimizing Freedivah's architecture with FSD, refer to [this document](https://www.notion.so/jiah827/Optimizing-Freedivah-s-Architecture-with-Feature-Sliced-Design-1134ef50e63380b1b47bea0cc16f5f64?pvs=4#1144ef50e63380aebdb8e32ea49f33f4).
+
+## Design
+<img src="docs/images/Freedivah_Design.webp" alt="description" style="width: auto; height: 700px" />
+
+For detailed documentation, including Ideation MindMap, API Design, Route Design, Functional Specification, ER Diagram refer to [this document](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74).
+
+
+
+
+
+
