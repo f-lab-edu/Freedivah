@@ -1,0 +1,36 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			],
+			"@styles/*": [
+				"./src/styles/*"
+			],
+			"@assets/*": [
+				"./public/assets/*"
+			]
+		},
+		"moduleResolution": "node",
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"noEmit": true,
+		"module": "esnext"
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		".next/types/app/(routes)/page.tsx",
+		".next/types/app/(routes)/layout.tsx"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

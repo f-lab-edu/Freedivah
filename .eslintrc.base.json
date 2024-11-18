@@ -1,0 +1,95 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"plugin:import/recommended",
+		"plugin:import/typescript"
+	],
+	"plugins": [
+		"@typescript-eslint",
+		"prettier",
+		"import"
+	],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"useTabs": true
+			}
+		],
+		"@typescript-eslint/no-unused-vars": "error",
+		"@typescript-eslint/no-explicit-any": "warn",
+		"no-console": [
+			"warn",
+			{
+				"allow": [
+					"warn",
+					"error"
+				]
+			}
+		],
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					[
+						"sibling",
+						"parent"
+					],
+					"index",
+					"type"
+				],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "next/**",
+						"group": "external",
+						"position": "after"
+					},
+					{
+						"pattern": "@/**",
+						"group": "internal",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [
+					"react",
+					"next"
+				],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"import/no-duplicates": "warn",
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxBOF": 0,
+				"maxEOF": 0
+			}
+		],
+		"import/newline-after-import": [
+			"error",
+			{
+				"count": 1
+			}
+		]
+	},
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module"
+	}
+}

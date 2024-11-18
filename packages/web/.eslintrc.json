@@ -1,0 +1,69 @@
+{
+	"extends": [
+		"../../.eslintrc.base.json",
+		"next/core-web-vitals"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					[
+						"sibling",
+						"parent"
+					],
+					"index",
+					"type"
+				],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "next/**",
+						"group": "external",
+						"position": "after"
+					},
+					{
+						"pattern": "@/**",
+						"group": "internal",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [
+					"react",
+					"next"
+				],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"import/newline-after-import": [
+			"error",
+			{
+				"count": 1
+			}
+		],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxBOF": 0,
+				"maxEOF": 0
+			}
+		]
+	}
+}
