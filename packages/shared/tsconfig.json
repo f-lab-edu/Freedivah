@@ -3,18 +3,14 @@
 	"compilerOptions": {
 		"composite": true,
 		"outDir": "./dist",
-		"rootDir": "./src",
+		"rootDir": ".",
 		"declaration": true,
 		"moduleResolution": "node",
-		"baseUrl": ".",
-		"paths": {
-			"*": [
-				"src/*"
-			]
-		}
+		"baseUrl": "."
 	},
 	"include": [
-		"src/**/*"
+		"**/*.ts",
+		"utils/index.ts"
 	],
 	"exclude": [
 		"node_modules",

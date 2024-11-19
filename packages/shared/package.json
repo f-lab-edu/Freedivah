@@ -11,6 +11,16 @@
 		"test:watch": "jest --watch",
 		"test:coverage": "jest --coverage"
 	},
+	"exports": {
+		"./utils": {
+			"types": "./dist/utils/index.d.ts",
+			"default": "./dist/utils/index.js"
+		},
+		"./types": {
+			"types": "./dist/types/index.d.ts",
+			"default": "./dist/types/index.js"
+		}
+	},
 	"devDependencies": {
 		"ts-jest": "^29.2.5"
 	}

@@ -6,6 +6,9 @@
 			"@/*": [
 				"./src/*"
 			],
+			"@shared/*": [
+				"../shared/*"
+			],
 			"@styles/*": [
 				"./src/styles/*"
 			],

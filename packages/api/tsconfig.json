@@ -1,19 +1,28 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noEmit": false,
-    "baseUrl": ".",
-    "paths": {
-      "@freedivah/shared": ["../shared/src"]
-    }
-  },
-  "references": [
-    { "path": "../shared" }
-  ],
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noEmit": false,
+		"baseUrl": ".",
+		"paths": {
+			"@freedivah/shared": [
+				"../shared"
+			]
+		}
+	},
+	"references": [
+		{
+			"path": "../shared"
+		}
+	],
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
 }
