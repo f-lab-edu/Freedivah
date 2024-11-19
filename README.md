@@ -1,14 +1,14 @@
 # Project Overview  
 **“From Dive Tracking to Social Sharing”**  
-Freedivah is an interactive platform for freedivers to mark and share their dive locations on a world map using national flag icons. It combines freediving with technology, allowing users to track their dives, create a personalized map, and connect with other divers.
+Freedivah is an interactive platform that allows freedivers to mark and share their dive locations on a global map using national flag icons.
 
-The name 'Freedivah' blends 'freediving' with my identity as a developer, reflecting my journey and enthusiasm for underwater exploration.
+The name 'Freedivah' combines 'freediving' with my identity as a developer, reflecting both my passion for underwater exploration and my journey.
 
 ## Key Features
 
-- **Personalized Dive Map**: Users can mark their dive locations on a world map.
-- **Sharing and Connecting**: Users can share their experiences and connect with other divers.
-- **Tracking and Documentation**: Keep a record of dives across different countries.
+- **Personalized Dive Map**: Pin and save your dive locations on a global map.
+- **Sharing and Connecting**: Share your dive experiences and connect with divers worldwide.
+- **Tracking and Documentation**: Log and track your dives across different countries to monitor your progress.
   
 ## Documentation
 For more detailed information, refer to the following:
@@ -19,13 +19,9 @@ For more detailed information, refer to the following:
 
 ## Development Considerations
 
-### 1. **Creating a "Screaming Architecture" from a Domain Perspective**
-   - Domain-driven feature separation for clear, scalable architecture.  
-   - Enables single-direction dependencies and modularity.
-
-### 2. **Designing Decoupled Systems**
-   - Clean separation of concerns between business logic, UI, and side effects.  
-   - Applied SOLID principles for maintainable and flexible components.  
+### Flexible and Scalable Architecture
+   - Single-direction dependencies and modularity.
+   - Loosely coupled systems through separation and abstraction of business logic, UI, and side effects. 
   
 ## Project Structure
 ```
