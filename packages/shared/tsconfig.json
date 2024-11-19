@@ -5,7 +5,6 @@
 		"outDir": "./dist",
 		"rootDir": ".",
 		"declaration": true,
-		"moduleResolution": "node",
 		"baseUrl": "."
 	},
 	"include": [

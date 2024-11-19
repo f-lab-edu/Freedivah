@@ -6,9 +6,6 @@
 			"@/*": [
 				"./src/*"
 			],
-			"@shared/*": [
-				"../shared/*"
-			],
 			"@styles/*": [
 				"./src/styles/*"
 			],
@@ -16,14 +13,15 @@
 				"./public/assets/*"
 			]
 		},
-		"moduleResolution": "node",
 		"plugins": [
 			{
-				"name": "next"
+				"name": "next" // Next.js 플러그인 활성화
 			}
 		],
 		"noEmit": true,
-		"module": "esnext"
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true
 	},
 	"include": [
 		"next-env.d.ts",

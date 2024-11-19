@@ -4,20 +4,9 @@
 		"outDir": "./dist",
 		"rootDir": "./src",
 		"module": "commonjs",
-		"moduleResolution": "node",
 		"noEmit": false,
 		"baseUrl": ".",
-		"paths": {
-			"@freedivah/shared": [
-				"../shared"
-			]
-		}
 	},
-	"references": [
-		{
-			"path": "../shared"
-		}
-	],
 	"include": [
 		"src/**/*.ts"
 	],
