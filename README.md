@@ -13,25 +13,25 @@ The name 'Freedivah' blends 'freediving' with my identity as a developer, reflec
 ## Development Considerations
 
 ### 1. **Creating a "Screaming Architecture" from a Domain Perspective**
-   - Using FSD (Feature-Sliced Design) to build a feature-driven architecture aligned with the domain, ensuring single-direction dependencies for enhanced flexibility and scalability.
+   - Domain-driven feature separation for clear, scalable architecture.  
+   - Enables single-direction dependencies and modularity.
 
 ### 2. **Designing Decoupled Systems**
-   - **Ensuring** a clean separation of concerns between business logic, UI, and side effects to maintain flexibility and scalability.
-   - **Using** SOLID principles to design modular, maintainable components and multi-paradigm design to provide a flexible system structure.
+   - Clean separation of concerns between business logic, UI, and side effects.  
+   - Applied SOLID principles for maintainable and flexible components.  
 
 ## Technologies Used
    - **Frontend**: Next.js, TypeScript, Vanilla Extract
    - **Backend**: Node.js / Express.js, Supabase
    - **Testing**: Jest
    - **DevOps**: Github Actions, Docker, AWS
-For a detailed explanation of why these technologies were selected, refer to [this document](https://www.notion.so/jiah827/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=4#10f4ef50e63380f9854cd83ea84b5bf0).
 
 ## How to Run
 ### Prerequisites
 - Node.js 18+ 
 - Yarn 4.5.1+
 
-### Installation
+### Installation & Development
 1. Clone the repository
    ```
    git clone https://github.com/f-lab-edu/Freedivah.git
@@ -41,7 +41,7 @@ For a detailed explanation of why these technologies were selected, refer to [th
    ```
    yarn install
    ```
-### Development
+3. Start development
    ```
    yarn dev:web   // Run web application only
    yarn dev:all   // Run all services (web, api, shared)
@@ -51,7 +51,7 @@ For a detailed explanation of why these technologies were selected, refer to [th
    yarn test      // Run all tests
    yarn test:coverage  // Run tests with coverage
    ```
-### Building
+### Build
    ```
    yarn build:all  // Build all packages
    ```
@@ -60,26 +60,30 @@ For a detailed explanation of why these technologies were selected, refer to [th
 ```
 packages/web/
 ├── app/               # Next.js App Router (Server Components)
-│ └──  (routes)/       # URL-based routing
+│ └──  (routes)/       # URL-based routing, metadata management
 │
 ├── src/               # FSD(Feature-Sliced Design) structure
 │ ├── application/     # App-wide settings
-│ ├── features/        # Domain-specific feature modules
-│ ├── entities/        # Domain models and basic CRUD
+│ ├── pages/           # Page composition
+│ ├── widgets/         # Self-contained UI and functionality modules
+│ ├── entities/        # Domain models and basic CRUD API
 │ └── shared/          # Reusable modules
 ```
 This structure combines Next.js App Router with Feature-Sliced Design (FSD) architecture to ensure:
-- Clear separation between routing (app/) and business logic (src/)
-- Domain-driven organization of features and entities
-- Reusable components and utilities in shared modules
-- Scalable and maintainable codebase structure
+- Clear separation between server and client components.
+- Scalable, maintainable, and domain-driven architecture.
 
 For a detailed story of optimizing Freedivah's architecture with FSD, refer to [this document](https://www.notion.so/jiah827/Optimizing-Freedivah-s-Architecture-with-Feature-Sliced-Design-1134ef50e63380b1b47bea0cc16f5f64?pvs=4#1144ef50e63380aebdb8e32ea49f33f4).
 
 ## Design
-<img src="docs/images/Freedivah_Design.webp" alt="description" style="width: auto; height: 700px" />
+<img src="docs/images/Freedivah_Design.webp" alt="Freedivah Design" style="width: auto; height: 700px" />
 
-For detailed documentation, including Ideation MindMap, API Design, Route Design, Functional Specification, ER Diagram refer to [this document](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74).
+## Documentation
+For more detailed information, refer to the following:
+- [Ideation MindMap, API Design, Functional Specification](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74)
+- [Optimizing Freedivah’s Architecture with FSD](https://www.notion.so/jiah827/Optimizing-Freedivah-s-Architecture-with-Feature-Sliced-Design-1134ef50e63380b1b47bea0cc16f5f64)
+- [Why Vanilla Extract CSS?](https://www.notion.so/jiah827/CSS-1424ef50e633802ab39cec3730fe2d74)
+
 
 
 
