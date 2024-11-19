@@ -6,6 +6,9 @@
 			"@/*": [
 				"./src/*"
 			],
+			"@shared/*": [
+				"../../node_modules/@freedivah/shared/*"
+			],
 			"@styles/*": [
 				"./src/styles/*"
 			],
