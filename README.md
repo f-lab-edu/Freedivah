@@ -24,6 +24,33 @@ For more detailed information, refer to the following:
    - Loosely coupled systems through separation and abstraction of business logic, UI, and side effects. 
   
 ## Project Structure
+### Package Dependencies
+```mermaid
+graph TD
+A[packages/web]
+B[packages/api]
+C[packages/shared]
+A --> C
+B --> C
+style A fill:#eb6b56,stroke:#333,stroke-width:2px
+style B fill:#2196F3,stroke:#333,stroke-width:2px
+style C fill:#47b39d,stroke:#333,stroke-width:2px
+```
+### Build/Development Flow
+```mermaid
+graph LR
+A[Build Shared] --> B[Build Web & API]
+B --> C[Run Services]
+style A fill:#47b39d,stroke:#333,stroke-width:2px
+style B fill:#2196F3,stroke:#333,stroke-width:2px
+style C fill:#eb6b56,stroke:#333,stroke-width:2px
+```
+### Packages Overview
+- `@freedivah/shared`: Core utilities and types
+- `@freedivah/web`: Next.js frontend application
+- `@freedivah/api`: Express backend server
+
+### Frontend Architecture
 ```
 packages/web/
 ├── app/               # Next.js App Router (Server Components)
