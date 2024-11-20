@@ -3,16 +3,15 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"prebuild": "yarn workspace @freedivah/shared build",
-		"dev": "NODE_ENV=development next dev",
-		"build": "yarn workspace @freedivah/shared build && next build",
+		"build": "next build",
+		"dev": "next dev -p 3000 & open http://localhost:3000",
 		"start": "next start",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"test:coverage": "jest --coverage"
 	},
 	"dependencies": {
-		"@freedivah/shared": "workspace:^",
+		"@freedivah/shared": "workspace:*",
 		"@vanilla-extract/css": "^1.16.0",
 		"next": "15.0.3",
 		"react": "19.0.0-rc-66855b96-20241106",

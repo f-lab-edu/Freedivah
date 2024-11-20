@@ -122,12 +122,16 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
+# Yarn
+.yarn/*
 .pnp.*
+
+# pnpm
+.pnpm-store/
+pnpm-lock.yaml
+
+# Turbo
+.turbo
 
 # DS_Store files
 **/.DS_Store
