@@ -13,9 +13,7 @@
 		"build": "turbo run build",
 		"dev": "turbo run dev",
 		"test": "turbo run test",
-		"test:web:watch": "turbo run test:watch --filter=@freedivah/web",
-		"test:api:watch": "turbo run test:watch --filter=@freedivah/api",
-		"test:shared:watch": "turbo run test:watch --filter=@freedivah/shared",
+		"test:watch:filter": "turbo run test:watch --filter=@freedivah/*#",
 		"clean": "turbo run clean && rm -rf node_modules",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
