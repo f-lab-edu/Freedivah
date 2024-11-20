@@ -18,6 +18,14 @@
 				"useTabs": true
 			}
 		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-single"
+		],
 		"@typescript-eslint/no-unused-vars": "error",
 		"@typescript-eslint/no-explicit-any": "warn",
 		"no-console": [
@@ -45,24 +53,10 @@
 				],
 				"pathGroups": [
 					{
-						"pattern": "react",
-						"group": "external",
-						"position": "before"
-					},
-					{
-						"pattern": "next/**",
-						"group": "external",
-						"position": "after"
-					},
-					{
 						"pattern": "@/**",
 						"group": "internal",
 						"position": "after"
 					}
-				],
-				"pathGroupsExcludedImportTypes": [
-					"react",
-					"next"
 				],
 				"newlines-between": "always",
 				"alphabetize": {

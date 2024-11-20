@@ -12,17 +12,6 @@
 		"import/order": [
 			"error",
 			{
-				"groups": [
-					"builtin",
-					"external",
-					"internal",
-					[
-						"sibling",
-						"parent"
-					],
-					"index",
-					"type"
-				],
 				"pathGroups": [
 					{
 						"pattern": "react",
@@ -44,26 +33,7 @@
 					"react",
 					"next"
 				],
-				"newlines-between": "always",
-				"alphabetize": {
-					"order": "asc",
-					"caseInsensitive": true
-				}
 			}
 		],
-		"import/newline-after-import": [
-			"error",
-			{
-				"count": 1
-			}
-		],
-		"no-multiple-empty-lines": [
-			"error",
-			{
-				"max": 1,
-				"maxBOF": 0,
-				"maxEOF": 0
-			}
-		]
 	}
 }

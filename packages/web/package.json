@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"build": "next build",
-		"dev": "next dev -p 3000 & open http://localhost:3000",
+		"dev": "next dev",
 		"start": "next start",
 		"test": "jest",
 		"test:watch": "jest --watch",
