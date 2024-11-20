@@ -12,7 +12,7 @@ The name 'Freedivah' combines 'freediving' with my identity as a developer, refl
   
 ## Documentation
 For more detailed information, refer to the following:
-- [Technology Choices Rationale, API Design, Functional Specification, Ideation MindMap](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74)
+- [Technology Choices Rationale, API Specification, Functional Specification, Route Design etc](https://jiah827.notion.site/Project-Freedivah-10f4ef50e633807387d4c9307d622bdb?pvs=74)
 - [Optimizing Freedivah’s Architecture with Feature-Sliced Design(FSD)](https://www.notion.so/jiah827/Optimizing-Freedivah-s-Architecture-with-Feature-Sliced-Design-1134ef50e63380b1b47bea0cc16f5f64)
 - [Managing Shared Libraries: API Strategy with Exports and Aliases](https://www.notion.so/jiah827/exports-alias-API-1434ef50e63380a3aacad6eb9b7fec3b)
 - [Why Vanilla Extract CSS?](https://www.notion.so/jiah827/CSS-1424ef50e633802ab39cec3730fe2d74)
