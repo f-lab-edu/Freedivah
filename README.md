@@ -45,7 +45,7 @@ style A fill:#47b39d,stroke:#333,stroke-width:2px
 style B fill:#2196F3,stroke:#333,stroke-width:2px
 style C fill:#eb6b56,stroke:#333,stroke-width:2px
 ```
-### Packages Overview
+### Package Overview
 - `@freedivah/shared`: Core utilities and types
 - `@freedivah/web`: Next.js frontend application
 - `@freedivah/api`: Express backend server
@@ -76,7 +76,7 @@ This structure combines Next.js App Router with Feature-Sliced Design (FSD) arch
 ## How to Run
 ### Prerequisites
 - Node.js 18+ 
-- Yarn 4.5.1+
+- PNPM 9.14.1+
 
 ### Installation & Development
 1. Clone the repository
@@ -86,21 +86,19 @@ This structure combines Next.js App Router with Feature-Sliced Design (FSD) arch
    ```
 2. Install dependencies
    ```
-   yarn install
+   pnpm install
    ```
 3. Start development
    ```
-   yarn dev:web   // Run web application only
-   yarn dev:all   // Run all services (web, api, shared)
+   pnpm dev
    ```
 ### Testing
    ```
-   yarn test      // Run all tests
-   yarn test:coverage  // Run tests with coverage
+   yarn test 
    ```
 ### Build
    ```
-   yarn build:all  // Build all packages
+   yarn build
    ```
 
 ## Design
