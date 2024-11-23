@@ -1,0 +1,39 @@
+{
+	"extends": [
+		"../../.eslintrc.base.json",
+		"next/core-web-vitals"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"import/order": [
+			"error",
+			{
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "next/**",
+						"group": "external",
+						"position": "after"
+					},
+					{
+						"pattern": "@/**",
+						"group": "internal",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [
+					"react",
+					"next"
+				],
+			}
+		],
+	}
+}

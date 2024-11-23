@@ -1,0 +1,40 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			],
+			"@shared/*": [
+				"../../node_modules/@freedivah/shared/*"
+			],
+			"@styles/*": [
+				"./src/styles/*"
+			],
+			"@assets/*": [
+				"./public/assets/*"
+			]
+		},
+		"plugins": [
+			{
+				"name": "next" // Next.js 플러그인 활성화
+			}
+		],
+		"noEmit": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		".next/types/app/(routes)/page.tsx",
+		".next/types/app/(routes)/layout.tsx"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"module": "commonjs",
+		"noEmit": false,
+		"baseUrl": ".",
+		"paths": {
+			"@shared/*": [
+				"../../node_modules/@freedivah/shared/*"
+			]
+		},
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}

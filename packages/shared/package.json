@@ -1,0 +1,23 @@
+{
+	"name": "@freedivah/shared",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage"
+	},
+	"exports": {
+		"./utils": {
+			"default": "./dist/utils/index.js"
+		},
+		"./types": {
+			"default": "./dist/types/index.js"
+		}
+	},
+	"devDependencies": {
+		"ts-jest": "^29.2.5"
+	}
+}
