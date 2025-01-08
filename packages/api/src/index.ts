@@ -11,6 +11,7 @@ const envPath = path.resolve(__dirname, `../../../../.env.${env}`);
 dotenv.config({ path: envPath });
 
 const app = express();
+app.disable('x-powered-by');
 const port = process.env.PORT ?? 4000;
 
 app.use(
