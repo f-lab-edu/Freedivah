@@ -14,10 +14,10 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(
-  cors({
-    origin: process.env.NEXT_PUBLIC_WEB_URL,
-    credentials: true,
-  }),
+	cors({
+		origin: process.env.NEXT_PUBLIC_WEB_URL,
+		credentials: true,
+	}),
 );
 
 app.use(express.json());
@@ -25,11 +25,11 @@ app.use("/api/auth", authRoutes);
 app.use(errorMiddleware);
 
 app.get("/api/health", (req, res) => {
-  res.json({ status: "ok" });
+	res.json({ status: "ok" });
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+	console.log(`Server is running on port ${port}`);
 });
 
 export { app };
