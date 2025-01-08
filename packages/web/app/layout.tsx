@@ -1,6 +1,5 @@
-
-import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import type { Metadata } from "next";
+import localFont from "next/font/local";
 
 const geistSans = localFont({
 	src: "../public/assets/fonts/GeistVF.woff",
@@ -23,6 +22,12 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	/**
+	 * @todo 클라이언트에 AccessToken 저장
+	 * 쿠키에 AccessToken이 있는 경우(신규 발급 받았다는 의미), JS 메모리(예:Context-API)에 저장 후, Cookie에서 AccessToken 삭제
+	 * @info 사용자 로그인 상태 확인
+	 * supabase > getSession 메서드 사용: 현재 세션 정보 조회
+	 */
 	return (
 		<html lang="en">
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>

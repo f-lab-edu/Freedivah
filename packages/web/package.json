@@ -18,10 +18,13 @@
 		"react-dom": "19.0.0-rc-66855b96-20241106"
 	},
 	"devDependencies": {
+		"@next/env": "^15.0.3",
 		"@testing-library/react": "^16.0.1",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
 		"@vanilla-extract/next-plugin": "^2.4.6",
+		"axios": "^1.7.7",
+		"dotenv": "^16.3.1",
 		"eslint-config-next": "15.0.3",
 		"jest-environment-jsdom": "^29.7.0"
 	}
