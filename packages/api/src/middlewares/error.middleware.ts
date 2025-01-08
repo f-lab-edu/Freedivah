@@ -25,13 +25,13 @@ export const errorMiddleware = (
 	next: NextFunction,
 ) => {
 	const isDev = process.env.NODE_ENV === "development";
-	const status = error.status || 500;
+	const status = error.status ?? 500;
 
 	const errorResponse: ApiError = {
 		success: false,
 		error: {
-			code: error.code || `ERR_${status}`,
-			message: error.message || "Internal Server Error",
+			code: error.code ?? `ERR_${status}`,
+			message: error.message ?? "Internal Server Error",
 			details: error.details,
 			timestamp: new Date().toISOString(),
 			path: req.path,

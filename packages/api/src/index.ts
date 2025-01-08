@@ -5,13 +5,13 @@ import path from "path";
 import { errorMiddleware } from "./middlewares/error.middleware";
 import { authRoutes } from "./routes/auth.routes";
 
-const env = process.env.NODE_ENV || "development";
+const env = process.env.NODE_ENV ?? "development";
 const envPath = path.resolve(__dirname, `../../../../.env.${env}`);
 
 dotenv.config({ path: envPath });
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT ?? 4000;
 
 app.use(
 	cors({

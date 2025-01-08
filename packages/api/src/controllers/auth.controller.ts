@@ -31,7 +31,7 @@ export class AuthController {
 			const error = req.query.error;
 
 			if (error || !code) {
-				throw new Error(error?.toString() || "No auth code provided");
+				throw new Error(error?.toString() ?? "No auth code provided");
 			}
 
 			const { userId, access_token, refresh_token } = await this.authService.getUserSessionData(code as string);
