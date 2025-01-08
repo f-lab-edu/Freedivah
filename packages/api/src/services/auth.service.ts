@@ -2,7 +2,7 @@ import type { AuthProvider } from "@shared/types/authTypes";
 import { supabase } from "../config/supabase";
 import { UserModel } from "../models/user.model";
 export class AuthService {
-	private userModel: UserModel;
+	private readonly userModel: UserModel;
 
 	constructor() {
 		this.userModel = new UserModel();
@@ -72,7 +72,8 @@ export class AuthService {
 
 	async createUser(userData: { id: string }) {
 		try {
-			return this.userModel.createUser(userData.id);
+			const result = await this.userModel.createUser(userData.id);
+			return result;
 		} catch (error) {
 			throw error;
 		}

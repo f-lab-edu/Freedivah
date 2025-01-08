@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-
+import { v4 as uuidv4 } from 'uuid';
 export interface ApiError {
 	success: false;
 	error: {
@@ -15,8 +15,7 @@ export interface ApiError {
 
 const generateId = () => {
 	const timestamp = new Date().toISOString().replace(/[-:.]/g, "");
-	const random = Math.random().toString(36).substring(2, 8);
-	return `${timestamp}-${random}`;
+	return `${timestamp}-${uuidv4()}`;
 };
 
 export const errorMiddleware = (

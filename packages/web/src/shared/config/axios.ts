@@ -23,7 +23,9 @@ export const createAxiosInstance = (baseURL: string) => {
 		},
 		(error) => {
 			console.error("Request Error:", error);
-			return Promise.reject(error);
+			return Promise.reject(
+				error instanceof Error ? error : new Error('Request failed')
+			);
 		},
 	);
 	instance.interceptors.response.use(
@@ -33,7 +35,9 @@ export const createAxiosInstance = (baseURL: string) => {
 		},
 		(error) => {
 			console.error("Response Error:", error);
-			return Promise.reject(error);
+			return Promise.reject(
+				error instanceof Error ? error : new Error('Request failed')
+			);
 		},
 	);
 	return instance;

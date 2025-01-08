@@ -2,6 +2,9 @@ import { createClient } from "@supabase/supabase-js";
 import dotenv from "dotenv";
 import path from "path";
 
+/**
+ * @todo 반복적으로 사용되는 조건문 통합
+ */
 const env = process.env.NODE_ENV || "development";
 const envPath = path.resolve(__dirname, `../../../../.env.${env}`);
 

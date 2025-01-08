@@ -10,6 +10,7 @@ export default async function AuthCallbackPage({
 	 */
 	if (params.error) {
 		const errorData = JSON.parse(params.error as string);
+		console.log(errorData);
 		return <ErrorFeedback />;
 	}
 
